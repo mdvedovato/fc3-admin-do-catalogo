@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.fullcyle.admin.catalogo.application'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(project(":domain"))
+
+    implementation group: 'io.vavr', name: 'vavr', version: '0.10.4'
+
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+
+    testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: '5.10.0'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

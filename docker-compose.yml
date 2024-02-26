@@ -6,6 +6,8 @@ services:
     restart: always
     ports:
       - "8090:8080"
+    networks:
+      - adm_videos_network
 
   mysql:
     container_name: adm_videos_mysql

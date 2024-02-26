@@ -25,13 +25,20 @@ repositories {
 dependencies {
     implementation(project(":domain"))
     implementation(project(":application"))
+
     implementation('mysql:mysql-connector-java')
+
     implementation('org.springframework.boot:spring-boot-starter-web'){
         exclude module: 'spring-boot-starter-tomcat'
     }
     implementation('org.springframework.boot:spring-boot-starter-undertow')
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
-    implementation('org.springframework.boot:spring-boot-starter-test')
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    testImplementation('org.flywaydb:flyway-core')
+    testImplementation('org.flywaydb:flyway-mysql:8.5.10')
+
+
     testRuntimeOnly('com.h2database:h2')
 }
 flyway {

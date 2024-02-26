@@ -792,3 +792,5 @@ Q.idea/sonarlint/securityhotspotstore/7/1/71b4578de4cfdc11c4d064bbbc96169797d52b
 Q.idea/sonarlint/securityhotspotstore/7/0/7068ff8aa242d3ad11b5c0484521c5fe7c61e5fb,2\2\22475b63a46441770a7c33e4486f6c4a02c30047
 Å
 Q.idea/sonarlint/securityhotspotstore/2/9/294624fc885d8ebe50a8f0af3ecdc03a8f1e5ec9,b\7\b7f0e5b91fd76ab77f6987ec4db54a7069dfa705
+
+Oinfrastructure/src/test/java/com/fullcycle/admin/catalogo/CleanUpExtension.java,b\6\b64bbc7e0d48ac94489b0c78631f0e852186dd80

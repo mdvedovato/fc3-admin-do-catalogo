@@ -37,7 +37,7 @@ public @interface MySQLGatewayTest {
                     .getBeansOfType(CrudRepository.class)
                     .values();
 
-//            cleanUp(repositories);
+            cleanUp(repositories);
         }
 
         private void cleanUp(final Collection<CrudRepository> repositories) {

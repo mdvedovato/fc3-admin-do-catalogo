@@ -12,7 +12,7 @@ repositories {
 dependencies {
     implementation(project(":domain"))
 
-    implementation group: 'io.vavr', name: 'vavr', version: '0.10.4'
+    implementation ('io.vavr:vavr:0.10.4')
 
     testImplementation platform('org.junit:junit-bom:5.9.1')
 

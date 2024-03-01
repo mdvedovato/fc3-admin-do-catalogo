@@ -1,0 +1,15 @@
+
+;
+java:S5786""Remove this 'public' modifier.(‚±®8ŠçñÊß1
+@
+java:S57860"Remove this 'public' modifier.(Ø œãùÿÿÿÿ8‹çñÊß1
+@
+java:S5786;"Remove this 'public' modifier.(ü®æ¦øÿÿÿÿ8‹çñÊß1
+;
+java:S5786"Remove this 'public' modifier.(ğÃÙÌ8‹çñÊß1
+`
+java:S6068@"CRemove this useless "eq(...)" invocation; pass the values directly.( ¶»¶8ŒçñÊß1
+
+java:S5778B"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(óÆ’¾8çñÊß1
+e
+java:S6068D"CRemove this useless "eq(...)" invocation; pass the values directly.(É³ñÕşÿÿÿÿ8çñÊß1

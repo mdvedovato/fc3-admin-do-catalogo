@@ -800,8 +800,6 @@ Oinfrastructure/src/test/java/com/fullcycle/admin/catalogo/CleanUpExtension.java
 Ninfrastructure/src/test/java/com/fullcycle/admin/catalogo/IntegrationTest.java,c\6\c60888f9930f19e00c17a4f41bea908e91e90049
 ¢
 rinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/category/create/CreateCategoryUseCaseIT.java,4\8\4852a5b3388d28c1c7d57bf39df3cad7c2ba5314
-£
-sinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/category/create/CreateCategoryUseCaseITx.java,e\a\ea352863787d4879ace44d5f9dd3566b8b7fd9c9
 ©
 yinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/category/retrieve/get/GetCategoryByIdUseCaseIT.java,8\0\8094a752eff34c1e6e3f848a03b114f475fdf67f
 ¢
@@ -813,13 +811,9 @@ yinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/category/
 Å
 Q.idea/sonarlint/securityhotspotstore/1/2/128474135c8a92b061faf4de42bd4a122113ab28,1\8\1827be7e69ab96d9568386e40c929b6b4ee8123b
 w
-G.idea/sonarlint/issuestore/e/a/ea352863787d4879ace44d5f9dd3566b8b7fd9c9,6\b\6ba08604b4825569486d5814869355071dbd3940
-w
 G.idea/sonarlint/issuestore/e/e/eec1a672d7bb2616e799552975ec1f91c75a50fe,4\7\471e0b3116df0b351efb532a9fde5590634e814b
 Å
 Q.idea/sonarlint/securityhotspotstore/a/9/a92de8c6eb0116cd7bfb0d39570c7a515445f5c0,e\e\eeac2d995296183d6fb0299fbca95f103d887377
-Å
-Q.idea/sonarlint/securityhotspotstore/e/a/ea352863787d4879ace44d5f9dd3566b8b7fd9c9,5\1\518b9680cac6f3fbd47869fbf8695270ac98b80c
 Å
 Q.idea/sonarlint/securityhotspotstore/e/e/eec1a672d7bb2616e799552975ec1f91c75a50fe,a\a\aaa9dacb026dd250e0f9afecd4ad2a8aa8306524
 Å

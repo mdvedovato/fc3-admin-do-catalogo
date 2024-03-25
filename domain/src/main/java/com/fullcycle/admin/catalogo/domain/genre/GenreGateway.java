@@ -1,7 +1,6 @@
 package com.fullcycle.admin.catalogo.domain.genre;
 
 import com.fullcycle.admin.catalogo.domain.pagination.Pagination;
-import com.fullcycle.admin.catalogo.domain.pagination.SearchQuery;
 
 import java.util.List;
 import java.util.Optional;

@@ -1210,3 +1210,5 @@ G.idea/sonarlint/issuestore/e/0/e03863bf2fb59faa58f74b198c0b17bb3ef7447c,0\2\02
 Q.idea/sonarlint/securityhotspotstore/c/f/cf81884f9abb1a5b1f706ec0659c0563e128fc70,a\c\acd067c8300f188419905d062265c998d65431cd
 w
 G.idea/sonarlint/issuestore/b/2/b2cfa016849bdf79bedc2f098cd88457eba5e83b,c\d\cd3d37c0b84d46cdc04465a1885dfdd40f685674
+Œ
+\domain/src/main/java/com/fullcycle/admin/catalogo/domain/pagination/CategorySearchQuery.java,c\a\cacfefbc1fda8e7cf242ecc7590a9862a33d79d4

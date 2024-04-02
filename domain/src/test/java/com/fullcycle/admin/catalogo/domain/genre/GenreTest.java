@@ -1,6 +1,5 @@
 package com.fullcycle.admin.catalogo.domain.genre;
 
-import com.fullcycle.admin.catalogo.domain.UnitTest;
 import com.fullcycle.admin.catalogo.domain.category.CategoryID;
 import com.fullcycle.admin.catalogo.domain.exceptions.NotificationException;
 import org.junit.jupiter.api.Assertions;
@@ -8,11 +7,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-public class GenreTest extends UnitTest {
+public class GenreTest {
 
     @Test
     public void givenValidParams_whenCallNewGenre_shouldInstantiateAGenre() {
@@ -91,17 +87,11 @@ public class GenreTest extends UnitTest {
         final var actualGenre = Genre.newGenre(expectedName, true);
 
         Assertions.assertNotNull(actualGenre);
-        assertTrue(actualGenre.isActive());
+        Assertions.assertTrue(actualGenre.isActive());
         Assertions.assertNull(actualGenre.getDeletedAt());
 
         final var actualCreatedAt = actualGenre.getCreatedAt();
         final var actualUpdatedAt = actualGenre.getUpdatedAt();
-
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
         actualGenre.deactivate();
 
@@ -128,12 +118,6 @@ public class GenreTest extends UnitTest {
 
         final var actualCreatedAt = actualGenre.getCreatedAt();
         final var actualUpdatedAt = actualGenre.getUpdatedAt();
-
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
         actualGenre.activate();
 
@@ -182,17 +166,11 @@ public class GenreTest extends UnitTest {
         final var actualGenre = Genre.newGenre("acao", true);
 
         Assertions.assertNotNull(actualGenre);
-        assertTrue(actualGenre.isActive());
+        Assertions.assertTrue(actualGenre.isActive());
         Assertions.assertNull(actualGenre.getDeletedAt());
 
         final var actualCreatedAt = actualGenre.getCreatedAt();
         final var actualUpdatedAt = actualGenre.getUpdatedAt();
-
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
         actualGenre.update(expectedName, expectedIsActive, expectedCategories);
 
@@ -281,12 +259,6 @@ public class GenreTest extends UnitTest {
         final var actualCreatedAt = actualGenre.getCreatedAt();
         final var actualUpdatedAt = actualGenre.getUpdatedAt();
 
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
         actualGenre.addCategory(seriesID);
         actualGenre.addCategory(moviesID);
 
@@ -339,12 +311,6 @@ public class GenreTest extends UnitTest {
 
         final var actualCreatedAt = actualGenre.getCreatedAt();
         final var actualUpdatedAt = actualGenre.getUpdatedAt();
-
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
         actualGenre.removeCategory(seriesID);
 
@@ -400,12 +366,6 @@ public class GenreTest extends UnitTest {
 
         final var actualCreatedAt = actualGenre.getCreatedAt();
         final var actualUpdatedAt = actualGenre.getUpdatedAt();
-
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
         actualGenre.addCategories(expectedCategories);
 

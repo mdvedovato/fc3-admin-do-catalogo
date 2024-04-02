@@ -13,7 +13,6 @@ dependencies {
     implementation(project(":domain"))
 
     implementation ('io.vavr:vavr:0.10.4')
-//    implementation project(path: ':application')
 
     testImplementation platform('org.junit:junit-bom:5.9.1')
 

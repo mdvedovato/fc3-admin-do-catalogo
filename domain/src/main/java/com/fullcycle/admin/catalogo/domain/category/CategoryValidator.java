@@ -1,10 +1,11 @@
 package com.fullcycle.admin.catalogo.domain.category;
 
-import com.fullcycle.admin.catalogo.domain.category.Category;
+import com.fullcycle.admin.catalogo.domain.validation.Error;
 import com.fullcycle.admin.catalogo.domain.validation.ValidationHandler;
 import com.fullcycle.admin.catalogo.domain.validation.Validator;
-import com.fullcycle.admin.catalogo.domain.validation.Error;
+
 public class CategoryValidator extends Validator {
+
     public static final int NAME_MAX_LENGTH = 255;
     public static final int NAME_MIN_LENGTH = 3;
     private final Category category;

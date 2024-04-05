@@ -1,14 +1,12 @@
 package com.fullcycle.admin.catalogo.domain.category;
 
 import com.fullcycle.admin.catalogo.domain.AggregateRoot;
-import com.fullcycle.admin.catalogo.domain.utils.InstantUtils;
 import com.fullcycle.admin.catalogo.domain.validation.ValidationHandler;
 
 import java.time.Instant;
 import java.util.Objects;
 
-public class Category extends AggregateRoot<CategoryID> implements Cloneable{
-
+public class Category extends AggregateRoot<CategoryID> implements Cloneable {
     private String name;
     private String description;
     private boolean active;
@@ -29,20 +27,17 @@ public class Category extends AggregateRoot<CategoryID> implements Cloneable{
         this.name = aName;
         this.description = aDescription;
         this.active = isActive;
-        this.createdAt =  Objects.requireNonNull(aCreationDate, "'createdAt' should not be null");
+        this.createdAt = Objects.requireNonNull(aCreationDate, "'createdAt' should not be null");
         this.updatedAt = Objects.requireNonNull(aUpdateDate, "'updatedAt' should not be null");
         this.deletedAt = aDeleteDate;
     }
 
     public static Category newCategory(final String aName, final String aDescription, final boolean isActive) {
         final var id = CategoryID.unique();
-        final var now = InstantUtils.now();
+        final var now = Instant.now();
         final var deletedAt = isActive ? null : now;
         return new Category(id, aName, aDescription, isActive, now, now, deletedAt);
     }
-//    public static Category clone(final Category aCategory) {
-//        return aCategory.clone();
-//    }
 
     public static Category with(
             final CategoryID anId,
@@ -80,21 +75,24 @@ public class Category extends AggregateRoot<CategoryID> implements Cloneable{
     public void validate(final ValidationHandler handler) {
         new CategoryValidator(this, handler).validate();
     }
+
     public Category activate() {
         this.deletedAt = null;
         this.active = true;
-        this.updatedAt = InstantUtils.now();
+        this.updatedAt = Instant.now();
         return this;
     }
+
     public Category deactivate() {
         if (getDeletedAt() == null) {
-            this.deletedAt = InstantUtils.now();
+            this.deletedAt = Instant.now();
         }
 
         this.active = false;
-        this.updatedAt = InstantUtils.now();
+        this.updatedAt = Instant.now();
         return this;
     }
+
     public Category update(
             final String aName,
             final String aDescription,
@@ -110,6 +108,7 @@ public class Category extends AggregateRoot<CategoryID> implements Cloneable{
         this.updatedAt = Instant.now();
         return this;
     }
+
     public CategoryID getId() {
         return id;
     }
@@ -147,4 +146,3 @@ public class Category extends AggregateRoot<CategoryID> implements Cloneable{
         }
     }
 }
-

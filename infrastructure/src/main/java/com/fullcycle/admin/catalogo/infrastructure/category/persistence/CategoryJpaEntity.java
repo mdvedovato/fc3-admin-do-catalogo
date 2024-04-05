@@ -9,12 +9,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.Instant;
 
-@Entity(name = "Category")
-@Table(name = "categories")
+@Entity
+@Table(name = "category")
 public class CategoryJpaEntity {
 
     @Id
-    @Column(name = "id", nullable = false)
     private String id;
 
     @Column(name = "name", nullable = false)

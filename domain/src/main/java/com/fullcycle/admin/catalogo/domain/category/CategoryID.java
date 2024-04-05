@@ -6,7 +6,6 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class CategoryID extends Identifier {
-
     private final String value;
 
     private CategoryID(final String value) {
@@ -36,7 +35,7 @@ public class CategoryID extends Identifier {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         final CategoryID that = (CategoryID) o;
-        return Objects.equals(getValue(), that.getValue());
+        return getValue().equals(that.getValue());
     }
 
     @Override

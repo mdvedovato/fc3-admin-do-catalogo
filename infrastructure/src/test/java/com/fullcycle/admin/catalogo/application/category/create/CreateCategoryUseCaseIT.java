@@ -10,7 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.times;
 
 @IntegrationTest
 public class CreateCategoryUseCaseIT {
@@ -30,7 +31,7 @@ public class CreateCategoryUseCaseIT {
         final var expectedDescription = "A categoria mais assistida";
         final var expectedIsActive = true;
 
-        Assertions.assertEquals(1, categoryRepository.count());
+        Assertions.assertEquals(0, categoryRepository.count());
 
         final var aCommand =
                 CreateCategoryCommand.with(expectedName, expectedDescription, expectedIsActive);
@@ -51,7 +52,6 @@ public class CreateCategoryUseCaseIT {
         Assertions.assertNotNull(actualCategory.getCreatedAt());
         Assertions.assertNotNull(actualCategory.getUpdatedAt());
         Assertions.assertNull(actualCategory.getDeletedAt());
-
     }
 
     @Test
@@ -118,12 +118,11 @@ public class CreateCategoryUseCaseIT {
                 CreateCategoryCommand.with(expectedName, expectedDescription, expectedIsActive);
 
         doThrow(new IllegalStateException(expectedErrorMessage))
-                .when(categoryGateway).create(any());
+                        .when(categoryGateway).create(any());
 
         final var notification = useCase.execute(aCommand).getLeft();
 
         Assertions.assertEquals(expectedErrorCount, notification.getErrors().size());
         Assertions.assertEquals(expectedErrorMessage, notification.firstError().message());
     }
-
 }

@@ -8,8 +8,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
 @MySQLGatewayTest
 public class CategoryRepositoryTest {
 
@@ -27,7 +25,7 @@ public class CategoryRepositoryTest {
         anEntity.setName(null);
 
         final var actualException =
-                assertThrows(DataIntegrityViolationException.class, () -> categoryRepository.save(anEntity));
+                Assertions.assertThrows(DataIntegrityViolationException.class, () -> categoryRepository.save(anEntity));
 
         final var actualCause =
                 Assertions.assertInstanceOf(PropertyValueException.class, actualException.getCause());
@@ -47,7 +45,7 @@ public class CategoryRepositoryTest {
         anEntity.setCreatedAt(null);
 
         final var actualException =
-                assertThrows(DataIntegrityViolationException.class, () -> categoryRepository.save(anEntity));
+                Assertions.assertThrows(DataIntegrityViolationException.class, () -> categoryRepository.save(anEntity));
 
         final var actualCause =
                 Assertions.assertInstanceOf(PropertyValueException.class, actualException.getCause());
@@ -67,7 +65,7 @@ public class CategoryRepositoryTest {
         anEntity.setUpdatedAt(null);
 
         final var actualException =
-                assertThrows(DataIntegrityViolationException.class, () -> categoryRepository.save(anEntity));
+                Assertions.assertThrows(DataIntegrityViolationException.class, () -> categoryRepository.save(anEntity));
 
         final var actualCause =
                 Assertions.assertInstanceOf(PropertyValueException.class, actualException.getCause());

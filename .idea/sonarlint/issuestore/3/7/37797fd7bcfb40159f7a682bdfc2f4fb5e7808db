@@ -1,9 +1,7 @@
 
 G
-java:S2160
-"+Override the "equals" method in this class.(¢Ñ®8§óÀäÚ1
-]	java:S125+"<This block of commented-out lines of code should be removed.(Ì®Ëİıÿÿÿÿ8«óÀäÚ1
+java:S2160	"+Override the "equals" method in this class.(¢Ñ®8§óÀäÚ1
 \
-java:S1161q":Add the "@Override" annotation above this method signature(“êÊ‚ûÿÿÿÿ8°óÀäÚ1
+java:S1161p":Add the "@Override" annotation above this method signature(“êÊ‚ûÿÿÿÿ8°óÀäÚ1
 q
-java:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(ìÿô¯8±óÀäÚ1
+java:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(ìÿô¯8±óÀäÚ1

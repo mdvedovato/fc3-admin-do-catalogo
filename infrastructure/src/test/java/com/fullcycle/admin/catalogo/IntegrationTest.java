@@ -1,5 +1,3 @@
-
-
 package com.fullcycle.admin.catalogo;
 
 import com.fullcycle.admin.catalogo.infrastructure.configuration.WebServerConfig;
@@ -16,5 +14,4 @@ import java.lang.annotation.*;
 @SpringBootTest(classes = WebServerConfig.class)
 @ExtendWith(MySQLCleanUpExtension.class)
 public @interface IntegrationTest {
-
 }

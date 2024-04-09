@@ -30,6 +30,9 @@ public class GenreMySQLGatewayTest {
     @Autowired
     private GenreRepository genreRepository;
 
+    public GenreMySQLGatewayTest() {
+    }
+
     @Test
     public void testDependenciesInjected() {
         Assertions.assertNotNull(categoryGateway);

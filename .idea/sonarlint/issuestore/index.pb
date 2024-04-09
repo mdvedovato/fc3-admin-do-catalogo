@@ -2516,3 +2516,13 @@ winfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/config
 gapplication/src/main/java/com/fullcycle/admin/catalogo/application/genre/update/UpdateGenreCommand.java,6\1\614dd11602febd5ee7bdcc1421a42796bb0e58a9
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+œ
+linfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/genre/create/CreateGenreUseCaseIT.java,9\6\9658232f20a68ae96b2a2f68bbf42158f02b7792
+œ
+linfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/genre/delete/DeleteGenreUseCaseIT.java,e\a\eaf339f47e238e90abf37e240a4f54ab20d5a33c
+£
+sinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/genre/retrieve/get/GetGenreByIdUseCaseIT.java,e\9\e92be34c1e327f2f44523cb8cba2202711c1934d
+¡
+qinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/genre/retrieve/list/ListGenreUseCaseIT.java,f\d\fd4066d49fd03a0c5b0f98848882c55edacc5f13
+œ
+linfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/genre/update/UpdateGenreUseCaseIT.java,d\0\d080fd76979b0a6f21603df106b3f71a60b1b97e

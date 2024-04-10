@@ -2,9 +2,9 @@ package com.fullcycle.admin.catalogo.infrastructure.api;
 
 import com.fullcycle.admin.catalogo.domain.pagination.Pagination;
 import com.fullcycle.admin.catalogo.infrastructure.genre.models.CreateGenreRequest;
-import com.fullcycle.admin.catalogo.infrastructure.genre.models.GenreListResponse;
-import com.fullcycle.admin.catalogo.infrastructure.genre.models.GenreResponse;
-import com.fullcycle.admin.catalogo.infrastructure.genre.models.UpdateGenreRequest;
+//import com.fullcycle.admin.catalogo.infrastructure.genre.models.GenreListResponse;
+//import com.fullcycle.admin.catalogo.infrastructure.genre.models.GenreResponse;
+//import com.fullcycle.admin.catalogo.infrastructure.genre.models.UpdateGenreRequest;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

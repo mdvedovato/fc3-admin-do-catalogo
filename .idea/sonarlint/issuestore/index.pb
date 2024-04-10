@@ -2532,3 +2532,9 @@ Zinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/api/Ge
 minfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/api/controllers/GenreController.java,9\3\93ae5221bb38521b7606f44510cf664d1b3f95d0
 †
 pinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/genre/presenters/GenreApiPresenter.java,d\1\d154439c9cfc63d1acd27d042a368e3b59ab6b4d
+é
+^infrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/api/GenreAPITest.java,c\1\c1e69fedbde53b283aec8b5ff67ab1bb29b2eaf3
+°
+qinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/genre/models/CreateGenreRequestTest.java,6\f\6fb1911bed3cfe7f609088854028fd6bfdad3aae
+ù
+minfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/genre/models/CreateGenreRequest.java,0\1\01e1022dd54988ba258dd02a073b5a382d9fdd66

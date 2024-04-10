@@ -2526,3 +2526,9 @@ sinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/genre/ret
 qinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/genre/retrieve/list/ListGenreUseCaseIT.java,f\d\fd4066d49fd03a0c5b0f98848882c55edacc5f13
 ú
 linfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/genre/update/UpdateGenreUseCaseIT.java,d\0\d080fd76979b0a6f21603df106b3f71a60b1b97e
+ä
+Zinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/api/GenreAPI.java,4\8\486d105a523435bbade4d45b88a9fdd3ecd0485a
+ù
+minfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/api/controllers/GenreController.java,9\3\93ae5221bb38521b7606f44510cf664d1b3f95d0
+†
+pinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/genre/presenters/GenreApiPresenter.java,d\1\d154439c9cfc63d1acd27d042a368e3b59ab6b4d

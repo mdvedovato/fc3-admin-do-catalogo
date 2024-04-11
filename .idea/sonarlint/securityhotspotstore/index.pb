@@ -2538,3 +2538,9 @@ pinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/genre/
 qinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/genre/models/CreateGenreRequestTest.java,6\f\6fb1911bed3cfe7f609088854028fd6bfdad3aae
 ù
 minfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/genre/models/CreateGenreRequest.java,0\1\01e1022dd54988ba258dd02a073b5a382d9fdd66
+ù
+minfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/genre/models/UpdateGenreRequest.java,5\b\5b92b1c5015f0460b21cc2d30b26b46ac89990bd
+ú
+linfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/genre/models/GenreListResponse.java,1\d\1dc7a29d746cc192216b2b597cd8714e1ceda170
+ò
+hinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/genre/models/GenreResponse.java,7\6\760fe47061c064837bb1890034087bd2880ab471

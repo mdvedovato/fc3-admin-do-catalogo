@@ -2550,3 +2550,7 @@ linfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/genre/
 pinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/genre/models/GenreListResponseTest.java,f\f\ff7cd22519ec61222f243af0a0534d5663b85892
 ¡
 qinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/genre/models/UpdateGenreRequestTest.java,7\d\7d0e13d7259b80648beadc0d9db3b4e129db6773
+z
+Jinfrastructure/src/test/java/com/fullcycle/admin/catalogo/e2e/MockDsl.java,0\a\0a952d72995c875abc932505414e85e2a6f1effa
+…
+Uinfrastructure/src/test/java/com/fullcycle/admin/catalogo/e2e/genre/GenreE2ETest.java,6\4\6472e3c9cf07599342c707ad7d137136868d3f8e

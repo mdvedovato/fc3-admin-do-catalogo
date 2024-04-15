@@ -262,11 +262,19 @@ public class GenreTest {
         actualGenre.addCategory(seriesID);
         actualGenre.addCategory(moviesID);
 
+        try {
+            // Pausa a execução do thread por 5 segundos
+            Thread.sleep(5000); // 5000 milissegundos = 5 segundos
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        
         Assertions.assertNotNull(actualGenre.getId());
         Assertions.assertEquals(expectedName, actualGenre.getName());
         Assertions.assertEquals(expectedIsActive, actualGenre.isActive());
         Assertions.assertEquals(expectedCategories, actualGenre.getCategories());
         Assertions.assertEquals(actualCreatedAt, actualGenre.getCreatedAt());
+
         Assertions.assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
         Assertions.assertNull(actualGenre.getDeletedAt());
     }

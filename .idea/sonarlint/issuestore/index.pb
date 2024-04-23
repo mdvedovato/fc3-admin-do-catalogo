@@ -2564,3 +2564,21 @@ Udomain/src/main/java/com/fullcycle/admin/catalogo/domain/castmember/CastMemberI
 Wdomain/src/main/java/com/fullcycle/admin/catalogo/domain/castmember/CastMemberType.java,2\8\288f964294c45fa740a0204f87f7e1247d2dc1cc
 Œ
 \domain/src/main/java/com/fullcycle/admin/catalogo/domain/castmember/CastMemberValidator.java,8\9\89161b4d271fdb1e0b4413e468fa86f3d4fd4853
+Š
+Zdomain/src/main/java/com/fullcycle/admin/catalogo/domain/castmember/CastMemberGateway.java,6\1\61be0b04bde097a7b600b7886e1583ac69d9641a
+¥
+uapplication/src/test/java/com/fullcycle/admin/catalogo/application/castmember/create/CreateCastMemberUseCaseTest.java,2\b\2ba5d04f6b7779d8b357d5535068d8251102e25e
+
+Oapplication/src/test/java/com/fullcycle/admin/catalogo/application/Fixture.java,b\c\bca5a4c282c5cc77c9939b14daf3c7a50cc12fe7
+¬
+|application/src/test/java/com/fullcycle/admin/catalogo/application/castmember/create/delete/DeleteCastMemberUseCaseTest.java,a\c\ac38d955000d384c05f1e767505b174502f680ec
+¡
+qapplication/src/main/java/com/fullcycle/admin/catalogo/application/castmember/create/CreateCastMemberCommand.java,9\5\9527cdb39d576dbcac64ed255a5e5248bae6e3cd
+¥
+uapplication/src/test/java/com/fullcycle/admin/catalogo/application/castmember/delete/DeleteCastMemberUseCaseTest.java,7\6\76221f72b3d170b044e990a47e5ee2c69c483274
+ 
+papplication/src/main/java/com/fullcycle/admin/catalogo/application/castmember/create/CreateCastMemberOutput.java,8\f\8fb4dbbba6a30cd302990be875ef0a62f33e83aa
+¡
+qapplication/src/main/java/com/fullcycle/admin/catalogo/application/castmember/create/CreateCastMemberUseCase.java,f\a\faedf6888d11178f5b00d4b9a24aa55e18c0515d
+¨
+xapplication/src/main/java/com/fullcycle/admin/catalogo/application/castmember/create/DefaultCreateCastMemberUseCase.java,2\1\217b81203fef0a60d7b9e2f94fd4d010aea609f9

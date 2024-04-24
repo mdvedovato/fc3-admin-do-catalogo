@@ -5,6 +5,8 @@ import com.fullcycle.admin.catalogo.domain.validation.handler.ThrowsValidationHa
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class CategoryTest {
 
     @Test
@@ -159,7 +161,7 @@ public class CategoryTest {
         final var createdAt = aCategory.getCreatedAt();
         final var updatedAt = aCategory.getUpdatedAt();
 
-        Assertions.assertTrue(aCategory.isActive());
+        assertTrue(aCategory.isActive());
         Assertions.assertNull(aCategory.getDeletedAt());
 
         final var actualCategory = aCategory.deactivate();
@@ -171,7 +173,7 @@ public class CategoryTest {
         Assertions.assertEquals(expectedDescription, actualCategory.getDescription());
         Assertions.assertEquals(expectedIsActive, actualCategory.isActive());
         Assertions.assertEquals(createdAt, actualCategory.getCreatedAt());
-        Assertions.assertTrue(actualCategory.getUpdatedAt().isAfter(updatedAt));
+        assertTrue(actualCategory.getUpdatedAt().isAfter(updatedAt));
         Assertions.assertNotNull(actualCategory.getDeletedAt());
     }
 
@@ -201,7 +203,7 @@ public class CategoryTest {
         Assertions.assertEquals(expectedDescription, actualCategory.getDescription());
         Assertions.assertEquals(expectedIsActive, actualCategory.isActive());
         Assertions.assertEquals(createdAt, actualCategory.getCreatedAt());
-        Assertions.assertTrue(actualCategory.getUpdatedAt().isAfter(updatedAt));
+        assertTrue(actualCategory.getUpdatedAt().isAfter(updatedAt));
         Assertions.assertNull(actualCategory.getDeletedAt());
     }
 
@@ -242,7 +244,7 @@ public class CategoryTest {
                 Category.newCategory("Film", "A categoria", true);
 
         Assertions.assertDoesNotThrow(() -> aCategory.validate(new ThrowsValidationHandler()));
-        Assertions.assertTrue(aCategory.isActive());
+        assertTrue(aCategory.isActive());
         Assertions.assertNull(aCategory.getDeletedAt());
 
         final var createdAt = aCategory.getCreatedAt();
@@ -257,7 +259,7 @@ public class CategoryTest {
         Assertions.assertEquals(expectedDescription, actualCategory.getDescription());
         Assertions.assertFalse(aCategory.isActive());
         Assertions.assertEquals(createdAt, actualCategory.getCreatedAt());
-        Assertions.assertTrue(actualCategory.getUpdatedAt().isAfter(updatedAt));
+        assertTrue(actualCategory.getUpdatedAt().isAfter(updatedAt));
         Assertions.assertNotNull(aCategory.getDeletedAt());
     }
 
@@ -280,9 +282,9 @@ public class CategoryTest {
         Assertions.assertEquals(aCategory.getId(), actualCategory.getId());
         Assertions.assertEquals(expectedName, actualCategory.getName());
         Assertions.assertEquals(expectedDescription, actualCategory.getDescription());
-        Assertions.assertTrue(aCategory.isActive());
+        assertTrue(aCategory.isActive());
         Assertions.assertEquals(createdAt, actualCategory.getCreatedAt());
-        Assertions.assertTrue(actualCategory.getUpdatedAt().isAfter(updatedAt));
+        assertTrue(actualCategory.getUpdatedAt().isAfter(updatedAt));
         Assertions.assertNull(aCategory.getDeletedAt());
     }
 }

@@ -2612,3 +2612,7 @@ uapplication/src/main/java/com/fullcycle/admin/catalogo/application/castmember/r
 ~application/src/main/java/com/fullcycle/admin/catalogo/application/castmember/retrieve/list/DefaultListCastMembersUseCase.java,3\1\3145bd1f96c7aeaa64d6d083f0269200f14274aa
 §
 wapplication/src/main/java/com/fullcycle/admin/catalogo/application/castmember/retrieve/list/ListCastMembersUseCase.java,d\7\d7b3e3c8b1d8b8282616f517f0b2e8ab7a4300af
+¨
+xinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/castmember/persistence/CastMemberJpaEntity.java,0\4\042a04d39dfa30a0e175a083b0c519268f7cec38
+©
+yinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/castmember/persistence/CastMemberRepository.java,b\4\b448c7a69cdd9b1859efcf2b0dced276e258c59b

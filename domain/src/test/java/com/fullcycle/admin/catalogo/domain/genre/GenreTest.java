@@ -8,6 +8,9 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class GenreTest {
 
     @Test
@@ -87,7 +90,7 @@ public class GenreTest {
         final var actualGenre = Genre.newGenre(expectedName, true);
 
         Assertions.assertNotNull(actualGenre);
-        Assertions.assertTrue(actualGenre.isActive());
+        assertTrue(actualGenre.isActive());
         Assertions.assertNull(actualGenre.getDeletedAt());
 
         final var actualCreatedAt = actualGenre.getCreatedAt();
@@ -100,7 +103,7 @@ public class GenreTest {
         Assertions.assertEquals(expectedIsActive, actualGenre.isActive());
         Assertions.assertEquals(expectedCategories, actualGenre.getCategories().size());
         Assertions.assertEquals(actualCreatedAt, actualGenre.getCreatedAt());
-        Assertions.assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
+        assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
         Assertions.assertNotNull(actualGenre.getDeletedAt());
     }
 
@@ -126,7 +129,7 @@ public class GenreTest {
         Assertions.assertEquals(expectedIsActive, actualGenre.isActive());
         Assertions.assertEquals(expectedCategories, actualGenre.getCategories().size());
         Assertions.assertEquals(actualCreatedAt, actualGenre.getCreatedAt());
-        Assertions.assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
+        assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
         Assertions.assertNotNull(actualGenre.getUpdatedAt());
         Assertions.assertNull(actualGenre.getDeletedAt());
     }
@@ -153,7 +156,7 @@ public class GenreTest {
         Assertions.assertEquals(expectedIsActive, actualGenre.isActive());
         Assertions.assertEquals(expectedCategories, actualGenre.getCategories());
         Assertions.assertEquals(actualCreatedAt, actualGenre.getCreatedAt());
-        Assertions.assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
+        assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
         Assertions.assertNull(actualGenre.getDeletedAt());
     }
 
@@ -166,7 +169,7 @@ public class GenreTest {
         final var actualGenre = Genre.newGenre("acao", true);
 
         Assertions.assertNotNull(actualGenre);
-        Assertions.assertTrue(actualGenre.isActive());
+        assertTrue(actualGenre.isActive());
         Assertions.assertNull(actualGenre.getDeletedAt());
 
         final var actualCreatedAt = actualGenre.getCreatedAt();
@@ -179,7 +182,7 @@ public class GenreTest {
         Assertions.assertEquals(expectedIsActive, actualGenre.isActive());
         Assertions.assertEquals(expectedCategories, actualGenre.getCategories());
         Assertions.assertEquals(actualCreatedAt, actualGenre.getCreatedAt());
-        Assertions.assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
+        assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
         Assertions.assertNotNull(actualGenre.getDeletedAt());
     }
 
@@ -239,7 +242,7 @@ public class GenreTest {
         Assertions.assertEquals(expectedIsActive, actualGenre.isActive());
         Assertions.assertEquals(expectedCategories, actualGenre.getCategories());
         Assertions.assertEquals(actualCreatedAt, actualGenre.getCreatedAt());
-        Assertions.assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
+        assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
         Assertions.assertNull(actualGenre.getDeletedAt());
     }
 
@@ -275,7 +278,7 @@ public class GenreTest {
         Assertions.assertEquals(expectedCategories, actualGenre.getCategories());
         Assertions.assertEquals(actualCreatedAt, actualGenre.getCreatedAt());
 
-        Assertions.assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
+        assertEquals(true, actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
         Assertions.assertNull(actualGenre.getDeletedAt());
     }
 
@@ -327,7 +330,7 @@ public class GenreTest {
         Assertions.assertEquals(expectedIsActive, actualGenre.isActive());
         Assertions.assertEquals(expectedCategories, actualGenre.getCategories());
         Assertions.assertEquals(actualCreatedAt, actualGenre.getCreatedAt());
-        Assertions.assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
+        assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
         Assertions.assertNull(actualGenre.getDeletedAt());
     }
 
@@ -382,7 +385,7 @@ public class GenreTest {
         Assertions.assertEquals(expectedIsActive, actualGenre.isActive());
         Assertions.assertEquals(expectedCategories, actualGenre.getCategories());
         Assertions.assertEquals(actualCreatedAt, actualGenre.getCreatedAt());
-        Assertions.assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
+        assertTrue(actualUpdatedAt.isBefore(actualGenre.getUpdatedAt()));
         Assertions.assertNull(actualGenre.getDeletedAt());
     }
 

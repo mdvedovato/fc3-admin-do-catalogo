@@ -2616,3 +2616,11 @@ wapplication/src/main/java/com/fullcycle/admin/catalogo/application/castmember/r
 xinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/castmember/persistence/CastMemberJpaEntity.java,0\4\042a04d39dfa30a0e175a083b0c519268f7cec38
 ©
 yinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/castmember/persistence/CastMemberRepository.java,b\4\b448c7a69cdd9b1859efcf2b0dced276e258c59b
+£
+sinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/castmember/CastMemberMySQLGatewayTest.java,6\2\62bda6028e1d6371d647bf94be2196640ea66fe2
+v
+Finfrastructure/src/test/java/com/fullcycle/admin/catalogo/Fixture.java,0\e\0e818a71fb6605ec7a8960b7a5c6d01d2bbc524e
+Ÿ
+oinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/castmember/CastMemberMySQLGateway.java,b\8\b80fa5ad822fff90cae656dc48182b1f22e04665
+¬
+|infrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/configuration/usecases/CastMemberUseCaseConfig.java,a\e\ae7c4e676ba55a72e3fa5af4f191b940a7110cc0

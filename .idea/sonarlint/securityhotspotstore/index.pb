@@ -2624,3 +2624,15 @@ Finfrastructure/src/test/java/com/fullcycle/admin/catalogo/Fixture.java,0\e\0e8
 oinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/castmember/CastMemberMySQLGateway.java,b\8\b80fa5ad822fff90cae656dc48182b1f22e04665
 ¬
 |infrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/configuration/usecases/CastMemberUseCaseConfig.java,a\e\ae7c4e676ba55a72e3fa5af4f191b940a7110cc0
+¦
+vinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/castmember/create/CreateCastMemberUseCaseIT.java,5\2\52ea94a1973bd71d6bceee234974505b8fca4638
+­
+}infrastructure/src/test/java/com/fullcycle/admin/catalogo/application/castmember/retrieve/get/GetCastMemberByIdUseCaseIT.java,1\a\1a4b5842b88947b995b7e2fa96f91f02f03d1d9e
+±
+€infrastructure/src/test/java/com/fullcycle/admin/catalogo/application/castmember/retrieve/get/list/ListCastMembersUseCaseIT.java,8\7\876899fa39473b29fa8bf7620457c334d4b88dfa
+¦
+vinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/castmember/delete/DeleteCastMemberUseCaseIT.java,1\1\111604dae52dfb27a0628f2dfd2dc98ea2e12060
+¦
+vinfrastructure/src/test/java/com/fullcycle/admin/catalogo/application/castmember/update/UpdateCastMemberUseCaseIT.java,6\4\64388e686197d33b75196f791d6094aa80c2e76a
+¬
+|infrastructure/src/test/java/com/fullcycle/admin/catalogo/application/castmember/retrieve/list/ListCastMembersUseCaseIT.java,5\a\5a3938bf84c1cea64caf34bd60fea86d5afe7b43

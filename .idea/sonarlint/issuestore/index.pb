@@ -2650,3 +2650,11 @@ winfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/castme
 winfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/castmember/models/UpdateCastMemberRequest.java,3\2\32e2b33c2fe608437c37b67dbb49a7f1e87bb4d9
 ¦
 vinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/castmember/presenter/CastMemberPresenter.java,8\3\838a6ef7113d8863b057a75c4b0bd138890c922a
+ª
+zinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/castmember/models/CastMemberListResponseTest.java,f\a\fa9a80d3606d51128f75101dd23843e3e7504d23
+¦
+vinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/castmember/models/CastMemberResponseTest.java,5\5\55d61e19d2792333c6e56df70366e22e4e918b12
+«
+{infrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/castmember/models/CreateCastMemberRequestTest.java,6\3\63f6c6dddf437d57642d3cd6ffb2a8382dd4216b
+«
+{infrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/castmember/models/UpdateCastMemberRequestTest.java,0\6\0674acb7faf5019b64604d0e05ad71539e0a40d7

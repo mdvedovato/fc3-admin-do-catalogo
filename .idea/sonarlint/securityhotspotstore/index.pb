@@ -2658,3 +2658,5 @@ vinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/castme
 {infrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/castmember/models/CreateCastMemberRequestTest.java,6\3\63f6c6dddf437d57642d3cd6ffb2a8382dd4216b
 ´
 {infrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/castmember/models/UpdateCastMemberRequestTest.java,0\6\0674acb7faf5019b64604d0e05ad71539e0a40d7
+è
+_infrastructure/src/test/java/com/fullcycle/admin/catalogo/e2e/castmember/CastMemberE2ETest.java,f\f\ff008024640ab8452ff30aae08d2e291c6acda84

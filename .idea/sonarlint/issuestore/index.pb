@@ -2762,5 +2762,3 @@ ginfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/video/
 Pdomain/src/main/java/com/fullcycle/admin/catalogo/domain/video/VideoPreview.java,7\6\7660c784dd0169f987793b5a663166391996eff6
 u
 Edomain/src/test/java/com/fullcycle/admin/catalogo/domain/Fixture.java,e\1\e12d67111871d4597d1f6f4391a59561fce047fa
-u
-Edomain/src/main/java/com/fullcycle/admin/catalogo/domain/Fixture.java,c\0\c062093b25cca61a37e532417c8f260d7654ca3b

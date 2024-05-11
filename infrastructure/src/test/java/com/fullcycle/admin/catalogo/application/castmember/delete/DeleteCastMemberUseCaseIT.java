@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doThrow;
@@ -40,7 +41,7 @@ public class DeleteCastMemberUseCaseIT {
         this.castMemberRepository.saveAndFlush(CastMemberJpaEntity.from(aMember));
         this.castMemberRepository.saveAndFlush(CastMemberJpaEntity.from(aMemberTwo));
 
-        Assertions.assertEquals(2, this.castMemberRepository.count());
+        assertEquals(2, this.castMemberRepository.count());
 
         // when
         Assertions.assertDoesNotThrow(() -> useCase.execute(expectedId.getValue()));
@@ -48,7 +49,7 @@ public class DeleteCastMemberUseCaseIT {
         // then
         verify(castMemberGateway).deleteById(eq(expectedId));
 
-        Assertions.assertEquals(1, this.castMemberRepository.count());
+        assertEquals(1, this.castMemberRepository.count());
         Assertions.assertFalse(this.castMemberRepository.existsById(expectedId.getValue()));
         Assertions.assertTrue(this.castMemberRepository.existsById(aMemberTwo.getId().getValue()));
     }
@@ -72,7 +73,7 @@ public class DeleteCastMemberUseCaseIT {
         // then
         verify(castMemberGateway).deleteById(eq(expectedId));
 
-        Assertions.assertEquals(1, this.castMemberRepository.count());
+        assertEquals(1, this.castMemberRepository.count());
     }
 
     @Test
@@ -84,7 +85,7 @@ public class DeleteCastMemberUseCaseIT {
 
         final var expectedId = aMember.getId();
 
-        Assertions.assertEquals(1, this.castMemberRepository.count());
+        assertEquals(1, this.castMemberRepository.count());
 
         doThrow(new IllegalStateException("Gateway error"))
                 .when(castMemberGateway).deleteById(any());
@@ -95,6 +96,6 @@ public class DeleteCastMemberUseCaseIT {
         // then
         verify(castMemberGateway).deleteById(eq(expectedId));
 
-        Assertions.assertEquals(1, this.castMemberRepository.count());
+        assertEquals(1, this.castMemberRepository.count());
     }
 }

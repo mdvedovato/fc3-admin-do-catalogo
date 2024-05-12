@@ -55,7 +55,7 @@ public class DeleteCastMemberUseCaseIT {
     }
 
     @Test
-    public void givenAnInvalidId_whenCallsDeleteCastMember_shouldBeOk() {
+    public void givenAnInvalidId_whenCallsDeleteCastMember_shouldBeOk() throws InterruptedException {
         // given
         this.castMemberRepository.saveAndFlush(
                 CastMemberJpaEntity.from(
@@ -67,6 +67,8 @@ public class DeleteCastMemberUseCaseIT {
 
         Assertions.assertEquals(1, this.castMemberRepository.count());
 
+        Thread.sleep(5000); // 5000 milissegundos = 5 segundos
+
         // when
         Assertions.assertDoesNotThrow(() -> useCase.execute(expectedId.getValue()));
 
@@ -77,7 +79,7 @@ public class DeleteCastMemberUseCaseIT {
     }
 
     @Test
-    public void givenAValidId_whenCallsDeleteCastMemberAndGatewayThrowsException_shouldReceiveException() {
+    public void givenAValidId_whenCallsDeleteCastMemberAndGatewayThrowsException_shouldReceiveException() throws InterruptedException {
         // given
         final var aMember = CastMember.newMember(Fixture.name(), Fixture.CastMember.type());
 
@@ -89,6 +91,8 @@ public class DeleteCastMemberUseCaseIT {
 
         doThrow(new IllegalStateException("Gateway error"))
                 .when(castMemberGateway).deleteById(any());
+
+        Thread.sleep(5000); // 5000 milissegundos = 5 segundos
 
         // when
         Assertions.assertThrows(IllegalStateException.class, () -> useCase.execute(expectedId.getValue()));

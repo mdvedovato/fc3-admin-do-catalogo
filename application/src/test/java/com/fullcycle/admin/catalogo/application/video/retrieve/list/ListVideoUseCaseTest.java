@@ -1,8 +1,8 @@
 package com.fullcycle.admin.catalogo.application.video.retrieve.list;
 
-import com.fullcycle.admin.catalogo.application.Fixture;
 import com.fullcycle.admin.catalogo.application.UseCaseTest;
 import com.fullcycle.admin.catalogo.application.genre.retrieve.list.GenreListOutput;
+import com.fullcycle.admin.catalogo.domain.Fixture;
 import com.fullcycle.admin.catalogo.domain.pagination.Pagination;
 import com.fullcycle.admin.catalogo.domain.video.VideoGateway;
 import com.fullcycle.admin.catalogo.domain.video.VideoPreview;

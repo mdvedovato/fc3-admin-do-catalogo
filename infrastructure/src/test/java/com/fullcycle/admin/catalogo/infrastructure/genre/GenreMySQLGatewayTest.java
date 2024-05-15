@@ -30,9 +30,6 @@ public class GenreMySQLGatewayTest {
     @Autowired
     private GenreRepository genreRepository;
 
-    public GenreMySQLGatewayTest() {
-    }
-
     @Test
     public void testDependenciesInjected() {
         Assertions.assertNotNull(categoryGateway);
@@ -318,6 +315,26 @@ public class GenreMySQLGatewayTest {
     }
 
     @Test
+    public void givenTwoGenresAndOnePersisted_whenCallsExistsByIds_shouldReturnPersistedID() {
+        // given
+        final var aGenre = Genre.newGenre("Genre 1", true);
+
+        final var expectedItems = 1;
+        final var expectedId = aGenre.getId();
+
+        Assertions.assertEquals(0, genreRepository.count());
+
+        genreRepository.saveAndFlush(GenreJpaEntity.from(aGenre));
+
+        // when
+        final var actualGenre = genreGateway.existsByIds(List.of(GenreID.from("123"), expectedId));
+
+        // then
+        Assertions.assertEquals(expectedItems, actualGenre.size());
+        Assertions.assertEquals(expectedId.getValue(), actualGenre.get(0).getValue());
+    }
+
+    @Test
     public void givenAPrePersistedGenre_whenCallsDeleteById_shouldDeleteGenre() {
         // given
         final var aGenre = Genre.newGenre("Ação", true);
@@ -459,7 +476,7 @@ public class GenreMySQLGatewayTest {
             "createdAt,asc,0,10,5,5,Comédia romântica",
             "createdAt,desc,0,10,5,5,Ficção científica",
     })
-    public void givenAValidSortAndDirection_whenCallsFindAll_shouldReturnFiltered(
+    public void givenAValidSortAndDirection_whenCallsFindAll_shouldReturnOrdered(
             final String expectedSort,
             final String expectedDirection,
             final int expectedPage,
@@ -483,8 +500,7 @@ public class GenreMySQLGatewayTest {
         Assertions.assertEquals(expectedPerPage, actualPage.perPage());
         Assertions.assertEquals(expectedTotal, actualPage.total());
         Assertions.assertEquals(expectedItemsCount, actualPage.items().size());
-//TODO: verificar
-//        Assertions.assertEquals(expectedGenreName, actualPage.items().get(0).getName());
+        Assertions.assertEquals(expectedGenreName, actualPage.items().get(0).getName());
     }
 
     @ParameterizedTest
@@ -493,7 +509,7 @@ public class GenreMySQLGatewayTest {
             "1,2,2,5,Drama;Ficção científica",
             "2,2,1,5,Terror",
     })
-    public void givenAValidSortAndDirection_whenCallsFindAll_shouldReturnFiltered(
+    public void givenAValidPaging_whenCallsFindAll_shouldReturnPaged(
             final int expectedPage,
             final int expectedPerPage,
             final int expectedItemsCount,

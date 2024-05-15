@@ -1,6 +1,6 @@
 package com.fullcycle.admin.catalogo.application.castmember.update;
 
-import com.fullcycle.admin.catalogo.Fixture;
+import com.fullcycle.admin.catalogo.domain.Fixture;
 import com.fullcycle.admin.catalogo.IntegrationTest;
 import com.fullcycle.admin.catalogo.domain.castmember.CastMember;
 import com.fullcycle.admin.catalogo.domain.castmember.CastMemberGateway;
@@ -88,9 +88,7 @@ public class UpdateCastMemberUseCaseIT {
         );
 
         // when
-        final var actualException = Assertions.assertThrows(NotificationException.class, () -> {
-            useCase.execute(aCommand);
-        });
+        final var actualException = Assertions.assertThrows(NotificationException.class, () -> useCase.execute(aCommand));
 
         // then
         Assertions.assertNotNull(actualException);
@@ -142,7 +140,7 @@ public class UpdateCastMemberUseCaseIT {
         // given
         final var expectedId = CastMemberID.from("123");
         final var expectedName = Fixture.name();
-        final var expectedType = Fixture.CastMember.type();
+        final var expectedType = Fixture.CastMembers.type();
 
         final var expectedErrorMessage = "CastMember with ID 123 was not found";
 

@@ -2568,8 +2568,6 @@ Wdomain/src/main/java/com/fullcycle/admin/catalogo/domain/castmember/CastMemberT
 Zdomain/src/main/java/com/fullcycle/admin/catalogo/domain/castmember/CastMemberGateway.java,6\1\61be0b04bde097a7b600b7886e1583ac69d9641a
 ¥
 uapplication/src/test/java/com/fullcycle/admin/catalogo/application/castmember/create/CreateCastMemberUseCaseTest.java,2\b\2ba5d04f6b7779d8b357d5535068d8251102e25e
-
-Oapplication/src/test/java/com/fullcycle/admin/catalogo/application/Fixture.java,b\c\bca5a4c282c5cc77c9939b14daf3c7a50cc12fe7
 ¡
 qapplication/src/main/java/com/fullcycle/admin/catalogo/application/castmember/create/CreateCastMemberCommand.java,9\5\9527cdb39d576dbcac64ed255a5e5248bae6e3cd
 ¥
@@ -2762,3 +2760,5 @@ ginfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/video/
 Pdomain/src/main/java/com/fullcycle/admin/catalogo/domain/video/VideoPreview.java,7\6\7660c784dd0169f987793b5a663166391996eff6
 u
 Edomain/src/test/java/com/fullcycle/admin/catalogo/domain/Fixture.java,e\1\e12d67111871d4597d1f6f4391a59561fce047fa
+›
+kinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/video/DefaultVideoGatewayTest.java,2\a\2aca540b69280ccec49c45ce2c31e31dbb6ab629

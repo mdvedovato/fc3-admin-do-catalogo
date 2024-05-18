@@ -5,14 +5,11 @@ import com.fullcycle.admin.catalogo.domain.castmember.CastMemberType;
 import com.fullcycle.admin.catalogo.domain.category.Category;
 import com.fullcycle.admin.catalogo.domain.genre.Genre;
 import com.fullcycle.admin.catalogo.domain.video.Rating;
-import com.fullcycle.admin.catalogo.domain.video.Resource;
 import com.fullcycle.admin.catalogo.domain.video.Video;
 import com.github.javafaker.Faker;
 
 import java.time.Year;
 import java.util.Set;
-
-import static io.vavr.API.*;
 
 public final class Fixture {
 
@@ -135,17 +132,17 @@ public final class Fixture {
         public static Rating rating() {
             return FAKER.options().option(Rating.values());
         }
-
-        public static Resource resource(final Resource.Type type) {
-            final String contentType = Match(type).of(
-                    Case($(List(Resource.Type.VIDEO, Resource.Type.TRAILER)::contains), "video/mp4"),
-                    Case($(), "image/jpg")
-            );
-
-            final byte[] content = "Conteudo".getBytes();
-
-            return Resource.with(content, contentType, type.name().toLowerCase(), type);
-        }
+//TODO: Credentials
+//        public static Resource resource(final Resource.Type type) {
+//            final String contentType = Match(type).of(
+//                    Case($(List(Resource.Type.VIDEO, Resource.Type.TRAILER)::contains), "video/mp4"),
+//                    Case($(), "image/jpg")
+//            );
+//
+//            final byte[] content = "Conteudo".getBytes();
+//
+//            return Resource.with(content, contentType, type.name().toLowerCase(), type);
+//        }
 
         public static String description() {
             return FAKER.options().option(
@@ -156,7 +153,7 @@ public final class Fixture {
                             https://imersao.fullcycle.com.br/
                             """,
                     """
-                            Nesse vídeo você entenderá o que é DTO (Data Transfer Object), quando e como utilizar no dia a dia, 
+                            Nesse vídeo você entenderá o que é DTO (Data Transfer Object), quando e como utilizar no dia a dia,
                             bem como sua importância para criar aplicações com alta qualidade.
                             """
             );

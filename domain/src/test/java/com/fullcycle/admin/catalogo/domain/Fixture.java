@@ -4,12 +4,15 @@ import com.fullcycle.admin.catalogo.domain.castmember.CastMember;
 import com.fullcycle.admin.catalogo.domain.castmember.CastMemberType;
 import com.fullcycle.admin.catalogo.domain.category.Category;
 import com.fullcycle.admin.catalogo.domain.genre.Genre;
-import com.fullcycle.admin.catalogo.domain.video.Rating;
-import com.fullcycle.admin.catalogo.domain.video.Video;
+import com.fullcycle.admin.catalogo.domain.resource.Resource;
+import com.fullcycle.admin.catalogo.domain.utils.IdUtils;
+import com.fullcycle.admin.catalogo.domain.video.*;
 import com.github.javafaker.Faker;
 
 import java.time.Year;
 import java.util.Set;
+
+import static io.vavr.API.*;
 
 public final class Fixture {
 
@@ -39,6 +42,9 @@ public final class Fixture {
         );
     }
 
+    public static String checksum() {
+        return "03fe62de";
+    }
 
     public static Video video() {
         return Video.newVideo(
@@ -132,17 +138,22 @@ public final class Fixture {
         public static Rating rating() {
             return FAKER.options().option(Rating.values());
         }
-//TODO: Credentials
-//        public static Resource resource(final Resource.Type type) {
-//            final String contentType = Match(type).of(
-//                    Case($(List(Resource.Type.VIDEO, Resource.Type.TRAILER)::contains), "video/mp4"),
-//                    Case($(), "image/jpg")
-//            );
-//
-//            final byte[] content = "Conteudo".getBytes();
-//
-//            return Resource.with(content, contentType, type.name().toLowerCase(), type);
-//        }
+
+        public static VideoMediaType mediaType() {
+            return FAKER.options().option(VideoMediaType.values());
+        }
+
+        public static Resource resource(final VideoMediaType type) {
+            final String contentType = Match(type).of(
+                    Case($(List(VideoMediaType.VIDEO, VideoMediaType.TRAILER)::contains), "video/mp4"),
+                    Case($(), "image/jpg")
+            );
+
+            final String checksum = IdUtils.uuid();
+            final byte[] content = "Conteudo".getBytes();
+
+            return Resource.with(content, checksum, contentType, type.name().toLowerCase());
+        }
 
         public static String description() {
             return FAKER.options().option(
@@ -153,9 +164,27 @@ public final class Fixture {
                             https://imersao.fullcycle.com.br/
                             """,
                     """
-                            Nesse vídeo você entenderá o que é DTO (Data Transfer Object), quando e como utilizar no dia a dia,
+                            Nesse vídeo você entenderá o que é DTO (Data Transfer Object), quando e como utilizar no dia a dia, 
                             bem como sua importância para criar aplicações com alta qualidade.
                             """
+            );
+        }
+
+        public static AudioVideoMedia audioVideo(final VideoMediaType type) {
+            final var checksum = Fixture.checksum();
+            return AudioVideoMedia.with(
+                    checksum,
+                    type.name().toLowerCase(),
+                    "/videos/" + checksum
+            );
+        }
+
+        public static ImageMedia image(final VideoMediaType type) {
+            final var checksum = Fixture.checksum();
+            return ImageMedia.with(
+                    checksum,
+                    type.name().toLowerCase(),
+                    "/images/" + checksum
             );
         }
     }

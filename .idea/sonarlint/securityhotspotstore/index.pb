@@ -2796,3 +2796,9 @@ iinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/config
 winfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/services/local/InMemoryStorageServiceTest.java,b\9\b9c34b72b087c55a23b796b17856c8c675e204e5
 …
 Udomain/src/main/java/com/fullcycle/admin/catalogo/domain/video/VideoMediaCreated.java,e\8\e8392dd0bc51080b95857761076e36ea11a9876d
+Ÿ
+oinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/video/DefaultMediaResourceGateway.java,c\5\c5932801a45f20ed0f09952d137207b917e0e6ed
+£
+sinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/video/DefaultMediaResourceGatewayTest.java,f\8\f8a05bcc82434d213b529def2bb363055d00b160
+£
+sinfrastructure/src/test/java/com/fullcycle/admin/catalogo/infrastructure/services/local/InMemoryStorageAPITest.java,d\f\df22f69b8c86605e475212236980d480c8bd0176

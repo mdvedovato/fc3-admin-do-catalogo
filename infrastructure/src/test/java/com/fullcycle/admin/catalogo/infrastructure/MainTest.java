@@ -1,5 +1,6 @@
 package com.fullcycle.admin.catalogo.infrastructure;
 
+import com.mifmif.common.regex.Main;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

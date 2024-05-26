@@ -2790,8 +2790,6 @@ Rdomain/src/main/java/com/fullcycle/admin/catalogo/domain/video/VideoMediaType.j
 Pdomain/src/main/java/com/fullcycle/admin/catalogo/domain/events/DomainEvent.java,7\4\7464e99c02989ff3aedfb9ae082e8b806caa0810
 â
 Ydomain/src/main/java/com/fullcycle/admin/catalogo/domain/events/DomainEventPublisher.java,9\6\96b36376de359495ec40e9fdbf4f534a265b7c74
-ô
-iinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/configuration/StorageConfig.java,5\d\5df9b6536b3f390da5dee34707ca5e3692e16755
 Ö
 Udomain/src/main/java/com/fullcycle/admin/catalogo/domain/video/VideoMediaCreated.java,e\8\e8392dd0bc51080b95857761076e36ea11a9876d
 ü
@@ -2830,8 +2828,6 @@ zapplication/src/main/java/com/fullcycle/admin/catalogo/application/video/media/
 sapplication/src/main/java/com/fullcycle/admin/catalogo/application/video/media/update/UpdateMediaStatusCommand.java,9\e\9ecac430054c87393cc7fcbd2d9c3199fad26fc0
 £
 sapplication/src/main/java/com/fullcycle/admin/catalogo/application/video/media/update/UpdateMediaStatusUseCase.java,4\4\447eef22f89533c152bef3c05e651d80ec90599c
-ê
-`infrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/configuration/amqp.java,3\9\399b3e0ccf847114816259e4dc3a2bb1b74d981d
 ´
 {infrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/configuration/properties/amqp/QueueProperties.java,b\5\b568bffda71a9ba7e0f1350cc3f831ca9149f29d
 ñ
@@ -2842,3 +2838,5 @@ yinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/config
 yinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/configuration/annotations/VideoEncodedQueue.java,a\c\ac2bc5e99ec83a9a39be125654c9762cd85a8de6
 £
 sinfrastructure/src/main/java/com/fullcycle/admin/catalogo/infrastructure/configuration/annotations/VideoEvents.java,f\5\f5e04e82c9bede06db602f6874f67219f55cb7b4
+}
+Mdomain/src/main/java/com/fullcycle/admin/catalogo/domain/video/Video.java.bak,f\0\f0194be16be3363507a1ddbed2222296383ce3b8

@@ -1,6 +1,6 @@
 amqp:
   admin:
-    auto-create: true
+    auto-create: false
   host: localhost
   port: 5672
   username: adm_videos

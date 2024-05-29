@@ -10,20 +10,20 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 public class EventConfig {
 
-    @Bean
-    @VideoCreatedQueue
-    @Profile({"development"})
-    EventService localVideoCreatedEventService() {
-        return new InMemoryEventService();
-    }
-
 //    @Bean
 //    @VideoCreatedQueue
-//    @ConditionalOnMissingBean
-//    EventService videoCreatedEventService(
-//            @VideoCreatedQueue final QueueProperties props,
-//            final RabbitOperations ops
-//    ) {
-//        return new RabbitEventService(props.getExchange(), props.getRoutingKey(), ops);
+//    @Profile({"development"})
+//    EventService localVideoCreatedEventService() {
+//        return new InMemoryEventService();
 //    }
+
+    @Bean
+    @VideoCreatedQueue
+    @ConditionalOnMissingBean
+    EventService videoCreatedEventService(
+            @VideoCreatedQueue final QueueProperties props,
+            final RabbitOperations ops
+    ) {
+        return new RabbitEventService(props.getExchange(), props.getRoutingKey(), ops);
+    }
 }

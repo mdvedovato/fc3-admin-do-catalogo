@@ -438,11 +438,11 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
                 asString(expectedCategories),
                 asString(expectedGenres),
                 asString(expectedMembers),
-                expectedVideo,
-                expectedTrailer,
-                expectedBanner,
-                expectedThumb,
-                expectedThumbHalf
+                null,
+                null,
+                null,
+                null,
+                null
         );
 
         when(videoGateway.findById(any()))
@@ -526,11 +526,11 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
                 asString(expectedCategories),
                 asString(expectedGenres),
                 asString(expectedMembers),
-                expectedVideo,
-                expectedTrailer,
-                expectedBanner,
-                expectedThumb,
-                expectedThumbHalf
+                null,
+                null,
+                null,
+                null,
+                null
         );
 
         when(videoGateway.findById(any()))
@@ -591,11 +591,11 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
                 asString(expectedCategories),
                 asString(expectedGenres),
                 asString(expectedMembers),
-                expectedVideo,
-                expectedTrailer,
-                expectedBanner,
-                expectedThumb,
-                expectedThumbHalf
+                null,
+                null,
+                null,
+                null,
+                null
         );
 
         when(videoGateway.findById(any()))
@@ -656,11 +656,11 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
                 asString(expectedCategories),
                 asString(expectedGenres),
                 asString(expectedMembers),
-                expectedVideo,
-                expectedTrailer,
-                expectedBanner,
-                expectedThumb,
-                expectedThumbHalf
+                null,
+                null,
+                null,
+                null,
+                null
         );
 
         when(videoGateway.findById(any()))
@@ -721,11 +721,11 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
                 asString(expectedCategories),
                 asString(expectedGenres),
                 asString(expectedMembers),
-                expectedVideo,
-                expectedTrailer,
-                expectedBanner,
-                expectedThumb,
-                expectedThumbHalf
+                null,
+                null,
+                null,
+                null,
+                null
         );
 
         when(videoGateway.findById(any()))
@@ -786,11 +786,11 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
                 asString(expectedCategories),
                 asString(expectedGenres),
                 asString(expectedMembers),
-                expectedVideo,
-                expectedTrailer,
-                expectedBanner,
-                expectedThumb,
-                expectedThumbHalf
+                null,
+                null,
+                null,
+                null,
+                null
         );
 
         when(videoGateway.findById(any()))
@@ -852,11 +852,11 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
                 asString(expectedCategories),
                 asString(expectedGenres),
                 asString(expectedMembers),
-                expectedVideo,
-                expectedTrailer,
-                expectedBanner,
-                expectedThumb,
-                expectedThumbHalf
+                null,
+                null,
+                null,
+                null,
+                null
         );
 
         when(videoGateway.findById(any()))
@@ -925,11 +925,11 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
                 asString(expectedCategories),
                 asString(expectedGenres),
                 asString(expectedMembers),
-                expectedVideo,
-                expectedTrailer,
-                expectedBanner,
-                expectedThumb,
-                expectedThumbHalf
+                null,
+                null,
+                null,
+                null,
+                null
         );
 
         when(videoGateway.findById(any()))
@@ -998,11 +998,11 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
                 asString(expectedCategories),
                 asString(expectedGenres),
                 asString(expectedMembers),
-                expectedVideo,
-                expectedTrailer,
-                expectedBanner,
-                expectedThumb,
-                expectedThumbHalf
+                null,
+                null,
+                null,
+                null,
+                null
         );
 
         when(videoGateway.findById(any()))

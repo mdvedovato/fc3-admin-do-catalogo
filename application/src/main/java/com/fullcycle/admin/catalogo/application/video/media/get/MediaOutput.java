@@ -1,6 +1,6 @@
 package com.fullcycle.admin.catalogo.application.video.media.get;
 
-import com.fullcycle.admin.catalogo.domain.resource.Resource;
+import com.fullcycle.admin.catalogo.domain.video.Resource;
 
 public record MediaOutput(
         byte[] content,

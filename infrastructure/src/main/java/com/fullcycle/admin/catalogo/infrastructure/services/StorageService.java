@@ -9,7 +9,9 @@ public interface StorageService {
 
     void store(String id, Resource resource);
 
-    Optional<Resource> get(String id);
+    void store(String id, com.fullcycle.admin.catalogo.domain.video.Resource resource);
+
+    Optional<com.fullcycle.admin.catalogo.domain.video.Resource> get(String id);
 
     List<String> list(String prefix);
 

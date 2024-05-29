@@ -31,7 +31,7 @@ public class GCStorageService implements StorageService {
     }
 
     @Override
-    public Optional<Resource> get(final String id) {
+    public Optional<com.fullcycle.admin.catalogo.domain.video.Resource> get(final String id) {
         return Optional.ofNullable(this.storage.get(this.bucket, id))
                 .map(blob -> Resource.with(
                         blob.getContent(),

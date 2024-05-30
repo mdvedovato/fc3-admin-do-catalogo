@@ -17,6 +17,7 @@ import java.util.List;
 
 import static com.fullcycle.admin.catalogo.domain.Fixture.CastMembers.type;
 import static com.fullcycle.admin.catalogo.domain.Fixture.name;
+import static java.lang.Thread.*;
 
 @MySQLGatewayTest
 public class CastMemberMySQLGatewayTest {
@@ -270,7 +271,7 @@ public class CastMemberMySQLGatewayTest {
             final int expectedItemsCount,
             final long expectedTotal,
             final String expectedName
-    ) {
+    ) throws InterruptedException {
         // given
         mockMembers();
 
@@ -278,6 +279,8 @@ public class CastMemberMySQLGatewayTest {
 
         final var aQuery =
                 new SearchQuery(expectedPage, expectedPerPage, expectedTerms, expectedSort, expectedDirection);
+
+        sleep(1000);
 
         // when
         final var actualPage = castMemberGateway.findAll(aQuery);

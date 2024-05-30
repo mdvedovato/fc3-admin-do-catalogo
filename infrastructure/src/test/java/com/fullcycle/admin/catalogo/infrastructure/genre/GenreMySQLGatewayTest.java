@@ -18,6 +18,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Comparator;
 import java.util.List;
 
+import static java.lang.Thread.sleep;
+
 @MySQLGatewayTest
 public class GenreMySQLGatewayTest {
 
@@ -484,13 +486,15 @@ public class GenreMySQLGatewayTest {
             final int expectedItemsCount,
             final long expectedTotal,
             final String expectedGenreName
-    ) {
+    ) throws InterruptedException {
         // given
         mockGenres();
         final var expectedTerms = "";
 
         final var aQuery =
                 new SearchQuery(expectedPage, expectedPerPage, expectedTerms, expectedSort, expectedDirection);
+
+        sleep(1000);
 
         // when
         final var actualPage = genreGateway.findAll(aQuery);

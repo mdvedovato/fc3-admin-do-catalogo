@@ -114,11 +114,11 @@ public class DefaultVideoGatewayTest {
                         expectedGenres,
                         expectedMembers
                 )
-                .updateVideoMedia(expectedVideo)
-                .updateTrailerMedia(expectedTrailer)
-                .updateBannerMedia(expectedBanner)
-                .updateThumbnailMedia(expectedThumb)
-                .updateThumbnailHalfMedia(expectedThumbHalf);
+                .setVideo(expectedVideo)
+                .setTrailer(expectedTrailer)
+                .setBanner(expectedBanner)
+                .setThumbnail(expectedThumb)
+                .setThumbnailHalf(expectedThumbHalf);
 
         // when
         final var actualVideo = videoGateway.create(aVideo);
@@ -288,11 +288,11 @@ public class DefaultVideoGatewayTest {
                         expectedGenres,
                         expectedMembers
                 )
-                .updateVideoMedia(expectedVideo)
-                .updateTrailerMedia(expectedTrailer)
-                .updateBannerMedia(expectedBanner)
-                .updateThumbnailMedia(expectedThumb)
-                .updateThumbnailHalfMedia(expectedThumbHalf);
+                .setVideo(expectedVideo)
+                .setTrailer(expectedTrailer)
+                .setBanner(expectedBanner)
+                .setThumbnail(expectedThumb)
+                .setThumbnailHalf(expectedThumbHalf);
 
         // when
         final var actualVideo = videoGateway.update(updatedVideo);
@@ -436,11 +436,11 @@ public class DefaultVideoGatewayTest {
                                 expectedGenres,
                                 expectedMembers
                         )
-                        .updateVideoMedia(expectedVideo)
-                        .updateTrailerMedia(expectedTrailer)
-                        .updateBannerMedia(expectedBanner)
-                        .updateThumbnailMedia(expectedThumb)
-                        .updateThumbnailHalfMedia(expectedThumbHalf)
+                        .setVideo(expectedVideo)
+                        .setTrailer(expectedTrailer)
+                        .setBanner(expectedBanner)
+                        .setThumbnail(expectedThumb)
+                        .setThumbnailHalf(expectedThumbHalf)
         );
 
         // when

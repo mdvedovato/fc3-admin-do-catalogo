@@ -102,6 +102,7 @@ public class VideoTest {
                 Set.of()
         );
 
+
         // when
         final var actualVideo = Video.with(aVideo).update(
                 expectedTitle,

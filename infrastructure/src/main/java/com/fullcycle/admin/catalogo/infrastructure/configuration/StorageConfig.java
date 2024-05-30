@@ -1,5 +1,6 @@
 package com.fullcycle.admin.catalogo.infrastructure.configuration;
 
+import com.fullcycle.admin.catalogo.domain.video.Resource;
 import com.fullcycle.admin.catalogo.infrastructure.configuration.properties.google.GoogleStorageProperties;
 import com.fullcycle.admin.catalogo.infrastructure.configuration.properties.storage.StorageProperties;
 import com.fullcycle.admin.catalogo.infrastructure.services.StorageService;
@@ -22,17 +23,21 @@ public class StorageConfig {
     }
 
     @Bean
-    @Profile({"development", "test-integration", "test-e2e"})
-    public StorageService localStorageAPI() {
-        return new InMemoryStorageService();
-    }
-
-    @Bean
-    @ConditionalOnMissingBean
+    @Profile({"production", "development"})
     public StorageService gcStorageAPI(
             final GoogleStorageProperties props,
             final Storage storage
     ) {
-        return new GCStorageService(props.getBucket(), storage);
+        return new GCStorageService(props.getBucket(), storage) {
+            public void store(String id, Resource resource) {
+
+            }
+        };
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public StorageService localStorageAPI() {
+        return new InMemoryStorageService();
     }
 }

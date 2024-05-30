@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
-public abstract class InMemoryStorageService implements StorageService {
+public class InMemoryStorageService implements StorageService {
 
     private final Map<String, Resource> storage;
 

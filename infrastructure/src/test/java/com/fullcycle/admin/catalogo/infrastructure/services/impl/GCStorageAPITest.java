@@ -1,7 +1,7 @@
 package com.fullcycle.admin.catalogo.infrastructure.services.impl;
 
 import com.fullcycle.admin.catalogo.domain.Fixture;
-import com.fullcycle.admin.catalogo.domain.resource.Resource;
+import com.fullcycle.admin.catalogo.domain.video.Resource;
 import com.fullcycle.admin.catalogo.domain.video.VideoMediaType;
 import com.google.api.gax.paging.Page;
 import com.google.cloud.storage.Blob;
@@ -30,7 +30,12 @@ public class GCStorageAPITest {
     @BeforeEach
     public void setUp() {
         this.storage = Mockito.mock(Storage.class);
-        this.target = new GCStorageService(bucket, storage);
+        this.target = new GCStorageService(bucket, storage) {
+            @Override
+            public void store(String id, com.fullcycle.admin.catalogo.domain.video.Resource resource) {
+
+            }
+        };
     }
 
     @Test

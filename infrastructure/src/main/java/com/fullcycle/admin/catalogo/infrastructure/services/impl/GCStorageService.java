@@ -1,6 +1,6 @@
 package com.fullcycle.admin.catalogo.infrastructure.services.impl;
 
-import com.fullcycle.admin.catalogo.domain.resource.Resource;
+import com.fullcycle.admin.catalogo.domain.video.Resource;
 import com.fullcycle.admin.catalogo.infrastructure.services.StorageService;
 import com.google.cloud.storage.BlobId;
 import com.google.cloud.storage.BlobInfo;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.StreamSupport;
 
-public class GCStorageService implements StorageService {
+public abstract class GCStorageService implements StorageService {
 
     private final String bucket;
     private final Storage storage;
@@ -31,7 +31,7 @@ public class GCStorageService implements StorageService {
     }
 
     @Override
-    public Optional<com.fullcycle.admin.catalogo.domain.video.Resource> get(final String id) {
+    public Optional<Resource> get(final String id) {
         return Optional.ofNullable(this.storage.get(this.bucket, id))
                 .map(blob -> Resource.with(
                         blob.getContent(),

@@ -1,6 +1,4 @@
 
-:
-java:S5786+"Remove this 'public' modifier.(º˜ØJ8òè­ÆØ1
 @
 java:S5786U"Remove this 'public' modifier.(è–ô¨ùÿÿÿÿ8òè­ÆØ1
 ;
@@ -11,10 +9,6 @@ java:S5786"Remove this 'public' modifier.(ÌÇ™†úÿÿÿÿ8òè­ÆØ1
 java:S5786Ç"Remove this 'public' modifier.(ê¦ßì8óè­ÆØ1
 ;
 java:S5786"Remove this 'public' modifier.(ÕÏ·½8êÉ¦îê1
-e
-java:S6068;"CRemove this useless "eq(...)" invocation; pass the values directly.( şşÎüÿÿÿÿ8ëÉ¦îê1
-`
-java:S6068F"CRemove this useless "eq(...)" invocation; pass the values directly.(€«‚8ëÉ¦îê1
 e
 java:S6068d"CRemove this useless "eq(...)" invocation; pass the values directly.( şşÎüÿÿÿÿ8ìÉ¦îê1
 f

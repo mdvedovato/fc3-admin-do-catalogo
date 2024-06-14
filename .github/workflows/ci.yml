@@ -26,5 +26,3 @@ jobs:
       # 3. Executar os testes da aplicação
       - name: Run application tests
         run: ./gradlew test
-      # 4. Teste
-      # 5. Testexx

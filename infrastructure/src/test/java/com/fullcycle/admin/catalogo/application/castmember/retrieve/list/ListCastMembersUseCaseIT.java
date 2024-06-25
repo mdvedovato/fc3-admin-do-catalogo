@@ -88,7 +88,7 @@ public class ListCastMembersUseCaseIT {
 
         final var expectedItems = List.<CastMemberListOutput>of();
 
-//TODO:        Assertions.assertEquals(0, this.castMemberRepository.count());
+        Assertions.assertEquals(0, this.castMemberRepository.count());
 
         final var aQuery =
                 new SearchQuery(expectedPage, expectedPerPage, expectedTerms, expectedSort, expectedDirection);

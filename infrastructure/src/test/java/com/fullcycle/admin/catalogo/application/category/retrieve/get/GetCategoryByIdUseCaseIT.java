@@ -14,6 +14,7 @@ import org.springframework.boot.test.mock.mockito.SpyBean;
 
 import java.util.Arrays;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doThrow;
 
@@ -44,14 +45,14 @@ public class GetCategoryByIdUseCaseIT {
 
         final var actualCategory = useCase.execute(expectedId.getValue());
 
-        Assertions.assertEquals(expectedId, actualCategory.id());
-        Assertions.assertEquals(expectedName, actualCategory.name());
-        Assertions.assertEquals(expectedDescription, actualCategory.description());
-        Assertions.assertEquals(expectedIsActive, actualCategory.isActive());
-//TODO: verificar
-//        Assertions.assertEquals(aCategory.getCreatedAt(), actualCategory.createdAt());
-//        Assertions.assertEquals(aCategory.getUpdatedAt(), actualCategory.updatedAt());
-//        Assertions.assertEquals(aCategory.getDeletedAt(), actualCategory.deletedAt());
+        assertEquals(expectedId, actualCategory.id());
+        assertEquals(expectedName, actualCategory.name());
+        assertEquals(expectedDescription, actualCategory.description());
+        assertEquals(expectedIsActive, actualCategory.isActive());
+//TODO:
+//        assertEquals(aCategory.getCreatedAt(), actualCategory.createdAt());
+//        assertEquals(aCategory.getUpdatedAt(), actualCategory.updatedAt());
+//        assertEquals(aCategory.getDeletedAt(), actualCategory.deletedAt());
     }
 
     @Test
@@ -64,7 +65,7 @@ public class GetCategoryByIdUseCaseIT {
                 () -> useCase.execute(expectedId.getValue())
         );
 
-        Assertions.assertEquals(expectedErrorMessage, actualException.getMessage());
+        assertEquals(expectedErrorMessage, actualException.getMessage());
     }
 
     @Test
@@ -80,7 +81,7 @@ public class GetCategoryByIdUseCaseIT {
                 () -> useCase.execute(expectedId.getValue())
         );
 
-        Assertions.assertEquals(expectedErrorMessage, actualException.getMessage());
+        assertEquals(expectedErrorMessage, actualException.getMessage());
     }
 
     private void save(final Category... aCategory) {
